@@ -121,7 +121,11 @@ switch ($do) {
                 if ($config['reg_nofify_admin'] == 'yes') {
                     sendTelegram($config['CompanyName'] . ' - ' . Lang::T('New User Registration') . "\n\nFull Name: " . $fullname . "\nUsername: " . $username . "\nEmail: " . $email . "\nPhone Number: " . $phone_number . "\nAddress: " . $address);
                 }
-                r2(getUrl('login'), 's', Lang::T('Register Success! You can login now'));
+                $_SESSION['uid'] = $user;
+                User::setCookie($user);
+                $d->last_login = date('Y-m-d H:i:s');
+                $d->save();
+                r2(U . 'order/package', 's', Lang::T('Register Success! You can login now'));
             } else {
                 $ui->assign('username', $username);
                 $ui->assign('fullname', $fullname);

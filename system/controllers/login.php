@@ -50,7 +50,7 @@ switch ($do) {
                             showResult(false, Lang::T('Invalid Username or Password'));
                         }
                     }
-                    _alert(Lang::T('Login Successful'), 'success', "home");
+                    _alert(Lang::T('Login Successful'), 'success', "home&mikrotik=login");
                 } else {
                     _msglog('e', Lang::T('Invalid Username or Password'));
                     _log($username . ' ' . Lang::T('Failed Login'), 'User');

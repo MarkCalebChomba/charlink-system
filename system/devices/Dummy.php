@@ -10,8 +10,8 @@ class Dummy {
             'description' => 'This devices is just dummy and do nothing, good if you just want to use billing only without doing something to device',
             'author' => 'ibnu maksum',
             'url' => [
-                'Github' => 'https://github.com/hotspotbilling/phpnuxbill/',
-                'Telegram' => 'https://t.me/phpnuxbill',
+                'Github' => 'https://github.com/MarkCalebChomba/charlink-system',
+                'Telegram' => 'https://t.me/charlinkconnect',
                 'Donate' => 'https://paypal.me/ibnux'
             ]
         ];

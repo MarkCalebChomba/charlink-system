@@ -2,7 +2,7 @@
 </div>
 <footer class="main-footer">
     <div class="pull-right" id="version" onclick="location.href = '{Text::url('community')}#latestVersion';"></div>
-    PHPNuxBill by <a href="https://github.com/hotspotbilling/phpnuxbill" rel="nofollow noreferrer noopener"
+    Charlink Connect <a href="https://github.com/MarkCalebChomba/charlink-system" rel="nofollow noreferrer noopener"
         target="_blank">iBNuX</a>, Theme by <a href="https://adminlte.io/" rel="nofollow noreferrer noopener"
         target="_blank">AdminLTE</a>
 </footer>

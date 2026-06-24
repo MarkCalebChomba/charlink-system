@@ -15,7 +15,7 @@ class FileName {
             'description' => '',
             'author' => 'ibnu maksum',
             'url' => [
-                'Github' => 'https://github.com/hotspotbilling/phpnuxbill/',
+                'Github' => 'https://github.com/MarkCalebChomba/charlink-system',
                 'Telegram' => 'https://t.me/ibnux',
                 'Donate' => 'https://paypal.me/ibnux',
                 'any text' => 'Any Url'

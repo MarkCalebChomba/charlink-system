@@ -9,7 +9,7 @@ class MikrotikVpn
     {
         return [
             'title' => 'Mikrotik Vpn',
-            'description' => 'To handle connection between PHPNuxBill with Mikrotik VPN',
+            'description' => 'To handle connection between Charlink Connect with Mikrotik VPN',
             'author' => 'agstr',
             'url' => [
                 'Github' => 'https://github.com/agstrxyz',

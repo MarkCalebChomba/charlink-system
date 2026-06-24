@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  Charlink Connect - Hotspot Billing (https://github.com/MarkCalebChomba/charlink-system)
+ *  by Charlink Connect
  **/
 
 //error_reporting (0);
@@ -36,7 +36,7 @@ define("APP_URL", $protocol . $host . $baseDir);
 // Live, Dev, Demo
 $_app_stage = "Live";
 
-// Database PHPNuxBill
+// Database Charlink Connect
 $db_host	    = "' . $db_host . '";
 $db_user        = "' . $db_user . '";
 $db_pass    	= "' . $db_pass . '";
@@ -67,7 +67,7 @@ define("APP_URL", $protocol . $host . $baseDir);
 // Live, Dev, Demo
 $_app_stage = "Live";
 
-// Database PHPNuxBill
+// Database Charlink Connect
 $db_host	    = "' . $db_host . '";
 $db_user        = "' . $db_user . '";
 $db_pass	    = "' . $db_pass . '";
@@ -88,7 +88,7 @@ if($_app_stage!="Live"){
 	please create a file named - config.php with following contents- <br/>$input");
     fwrite($fh, $input);
     fclose($fh);
-    $sql = file_get_contents('phpnuxbill.sql');
+    $sql = file_get_contents('charlink-connect.sql');
     $qr = $dbh->exec($sql);
     if (isset($_POST['radius']) && $_POST['radius'] == 'yes') {
         $sql = file_get_contents('radius.sql');
@@ -104,7 +104,7 @@ if($_app_stage!="Live"){
 <html lang="en">
 
 <head>
-    <title>PHPNuxBill Installer</title>
+    <title>Charlink Connect Installer</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -122,7 +122,7 @@ if($_app_stage!="Live"){
         <hr>
 
         <div class="span12">
-            <h4> PHPNuxBill Installer </h4>
+            <h4> Charlink Connect Installer </h4>
             <?php
             if ($cn == '1') {
             ?>
@@ -137,7 +137,7 @@ if($_app_stage!="Live"){
             } elseif ($cn == '2') {
             ?>
                 <p> MySQL Connection was successfull. An error occured while adding data on MySQL. Unsuccessfull
-                    Installation. Please refer manual installation in the website github.com/ibnux/phpnuxbill/wiki or Contact Telegram @ibnux  for
+                    Installation. Please refer manual installation in the website github.com/MarkCalebChomba/charlink-system/wiki or Contact Telegram @charlinkconnect  for
                     helping on installation</p>
             <?php
             } else {
@@ -149,7 +149,7 @@ if($_app_stage!="Live"){
         </div>
     </div>
 
-    <div class="footer">Copyright &copy; 2021 PHPNuxBill. All Rights Reserved<br /><br /></div>
+    <div class="footer">Copyright &copy; 2021 Charlink Connect. All Rights Reserved<br /><br /></div>
 </body>
 
 </html>

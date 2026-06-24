@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="{$app_url}/ui/ui/styles/sweetalert2.min.css" />
     <link rel="stylesheet" href="{$app_url}/ui/ui/styles/plugins/pace.css" />
     <link rel="stylesheet" href="{$app_url}/ui/ui/summernote/summernote.min.css" />
-    <link rel="stylesheet" href="{$app_url}/ui/ui/styles/phpnuxbill.css?2025.2.4" />
+    <link rel="stylesheet" href="{$app_url}/ui/ui/styles/charlink.css?1.0.0" />
     <link rel="stylesheet" href="{$app_url}/ui/ui/styles/7.css" />
 
     <script src="{$app_url}/ui/ui/scripts/sweetalert2.all.min.js"></script>
@@ -362,7 +362,7 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li {if $_routes[1] eq 'list' }class="active" {/if}><a
-                                        href="{Text::url('logs/phpnuxbill')}">PhpNuxBill</a></li>
+                                        href="{Text::url('logs/charlink-connect')}">Charlink Connect</a></li>
                                 {if $_c['radius_enable']}
                                     <li {if $_routes[1] eq 'radius' }class="active" {/if}><a
                                             href="{Text::url('logs/radius')}">Radius</a>

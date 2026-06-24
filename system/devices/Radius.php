@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  Charlink Connect - Hotspot Billing (https://github.com/MarkCalebChomba/charlink-system)
+ *  by Charlink Connect
  *
  * This is Core, don't modification except you want to contribute
  * better create new plugin
@@ -19,8 +19,8 @@ class Radius
             'description' => 'Radius system with Mysql/Mariadb as database',
             'author' => 'ibnux',
             'url' => [
-                'Github' => 'https://github.com/hotspotbilling/phpnuxbill/',
-                'Telegram' => 'https://t.me/phpnuxbill',
+                'Github' => 'https://github.com/MarkCalebChomba/charlink-system',
+                'Telegram' => 'https://t.me/charlinkconnect',
                 'Donate' => 'https://paypal.me/ibnux'
             ]
         ];

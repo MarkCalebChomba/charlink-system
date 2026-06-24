@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  Charlink Connect - Hotspot Billing (https://github.com/MarkCalebChomba/charlink-system)
+ *  by Charlink Connect
  **/
 _admin();
 $ui->assign('_title', Lang::T('Settings'));
@@ -61,28 +61,28 @@ switch ($action) {
             if ($_app_stage == 'Demo') {
                 r2(getUrl('settings/app'), 'e', 'You cannot perform this action in Demo mode');
             }
-            $result = Message::sendWhatsapp(_get('testWa'), 'PHPNuxBill Test Whatsapp');
+            $result = Message::sendWhatsapp(_get('testWa'), 'Charlink Connect Test Whatsapp');
             r2(getUrl('settings/app'), 's', 'Test Whatsapp has been send<br>Result: ' . $result);
         }
         if (!empty(_get('testSms'))) {
             if ($_app_stage == 'Demo') {
                 r2(getUrl('settings/app'), 'e', 'You cannot perform this action in Demo mode');
             }
-            $result = Message::sendSMS(_get('testSms'), 'PHPNuxBill Test SMS');
+            $result = Message::sendSMS(_get('testSms'), 'Charlink Connect Test SMS');
             r2(getUrl('settings/app'), 's', 'Test SMS has been send<br>Result: ' . $result);
         }
         if (!empty(_get('testEmail'))) {
             if ($_app_stage == 'Demo') {
                 r2(getUrl('settings/app'), 'e', 'You cannot perform this action in Demo mode');
             }
-            Message::sendEmail(_get('testEmail'), 'PHPNuxBill Test Email', 'PHPNuxBill Test Email Body');
+            Message::sendEmail(_get('testEmail'), 'Charlink Connect Test Email', 'Charlink Connect Test Email Body');
             r2(getUrl('settings/app'), 's', 'Test Email has been send');
         }
         if (!empty(_get('testTg'))) {
             if ($_app_stage == 'Demo') {
                 r2(getUrl('settings/app'), 'e', 'You cannot perform this action in Demo mode');
             }
-            $result = Message::sendTelegram('PHPNuxBill Test Telegram');
+            $result = Message::sendTelegram('Charlink Connect Test Telegram');
             r2(getUrl('settings/app'), 's', 'Test Telegram has been send<br>Result: ' . $result);
         }
 
@@ -223,7 +223,7 @@ switch ($action) {
                     $ui->assign("error_title", "RADIUS Error");
                     $ui->assign("error_message", "Radius table not found.<br><br>" .
                         $e->getMessage() .
-                        "<br><br>Download <a href=\"https://raw.githubusercontent.com/hotspotbilling/phpnuxbill/Development/install/radius.sql\">here</a> or <a href=\"https://raw.githubusercontent.com/hotspotbilling/phpnuxbill/master/install/radius.sql\">here</a> and import it to database.<br><br>Check config.php for radius connection details");
+                        "<br><br>Download <a href=\"https://raw.githubusercontent.com/MarkCalebChomba/charlink-system/main/install/radius.sql\">here</a> or <a href=\"https://raw.githubusercontent.com/MarkCalebChomba/charlink-system/main/install/radius.sql\">here</a> and import it to database.<br><br>Check config.php for radius connection details");
                     $ui->display('admin/error.tpl');
                     die();
                 }

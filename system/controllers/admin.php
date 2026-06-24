@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  Charlink Connect - Hotspot Billing (https://github.com/MarkCalebChomba/charlink-system)
+ *  by Charlink Connect
  **/
 
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");

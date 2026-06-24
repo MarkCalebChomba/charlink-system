@@ -1,4 +1,4 @@
-![PHPNuxBill](install/img/logo.png)
+# Charlink Connect
 
 # CHANGELOG
 

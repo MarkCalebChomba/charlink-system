@@ -92,7 +92,7 @@
                             {/foreach}
                         </select>
                     </div>
-                    <p class="help-block col-md-4"><a href="https://github.com/hotspotbilling/phpnuxbill/wiki/Themes"
+                    <p class="help-block col-md-4"><a href="https://github.com/MarkCalebChomba/charlink-system/wiki/Themes"
                             target="_blank">{Lang::T('Theme Info')}</a></p>
                 </div>
                 <div class="form-group">
@@ -550,7 +550,7 @@
                         </select>
                     </div>
                     <p class="help-block col-md-4"><a
-                            href="https://github.com/hotspotbilling/phpnuxbill/wiki/FreeRadius"
+                            href="https://github.com/MarkCalebChomba/charlink-system/wiki/FreeRadius"
                             target="_blank">{Lang::T('Radius Instructions')}</a></p>
                 </div>
                 <button class="btn btn-success btn-block" type="submit">
@@ -1155,7 +1155,7 @@
                         <div class="input-group">
                             <span class="input-group-addon">https://github.com/</span>
                             <input type="text" class="form-control" id="github_username" name="github_username"
-                                value="{$_c['github_username']}" placeholder="ibnux">
+                                value="{$_c['github_username']}" placeholder="charlinkconnect">
                         </div>
                     </div>
                 </div>

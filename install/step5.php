@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>PHPNuxBill Installer</title>
+    <title>Charlink Connect Installer</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -77,18 +77,18 @@ try {
         <img src="img/logo.png" class="img-responsive" alt="Logo" />
         <hr>
         <div class="span12">
-            <h4> PHPNuxBill Installer </h4>
+            <h4> Charlink Connect Installer </h4>
             <p>
                 <strong>Congratulations!</strong><br>
-                You have just install PHPNuxBill !<br><br>
+                You have just install Charlink Connect !<br><br>
                 <span class="text-danger">But wait!!<br>
                     <ol>
                         <li>Don't forget to rename folder <b>pages_example</b> to <b>pages</b>.<br>
                             if it not yet renamed</li>
-                        <li>Activate <a href="https://github.com/hotspotbilling/phpnuxbill/wiki/Cron-Jobs" target="_blank">Cronjob</a> for Expired and Reminder.</li>
-                        <li>Check <a href="https://github.com/hotspotbilling/phpnuxbill/wiki/How-It-Works---Cara-kerja" target="_blank">how PHPNuxbill Works</a></li>
-                        <li><a href="https://github.com/hotspotbilling/phpnuxbill/wiki#login-page-mikrotik" target="_blank">how to link Mikrotik Login to PHPNuxBill</a></li>
-                        <li>or use <a href="https://github.com/hotspotbilling/phpnuxbill-mikrotik-login-template" target="_blank">Mikrotik Login Template for PHPNuxBill</a></li>
+                        <li>Activate <a href="https://github.com/MarkCalebChomba/charlink-system/wiki/Cron-Jobs" target="_blank">Cronjob</a> for Expired and Reminder.</li>
+                        <li>Check <a href="https://github.com/MarkCalebChomba/charlink-system/wiki/How-It-Works---Cara-kerja" target="_blank">how PHPNuxbill Works</a></li>
+                        <li><a href="https://github.com/MarkCalebChomba/charlink-system/wiki#login-page-mikrotik" target="_blank">how to link Mikrotik Login to Charlink Connect</a></li>
+                        <li>or use <a href="https://github.com/MarkCalebChomba/charlink-system/wiki/Mikrotik-Login-Template" target="_blank">Mikrotik Login Template for Charlink Connect</a></li>
                     </ol>
                 </span><br><br>
                 To Login Admin Portal:<br>
@@ -106,7 +106,7 @@ try {
             </p>
         </div>
     </div>
-    <div class="footer">Copyright &copy; 2021 PHPNuxBill. All Rights Reserved<br /><br /></div>
+    <div class="footer">Copyright &copy; 2021 Charlink Connect. All Rights Reserved<br /><br /></div>
 </body>
 
 </html>

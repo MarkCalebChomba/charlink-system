@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  Charlink Connect - Hotspot Billing (https://github.com/MarkCalebChomba/charlink-system)
+ *  by Charlink Connect
  **/
 $step = _req('step', 0);
 $otpPath = $CACHE_PATH . File::pathFixer('/forgot/');

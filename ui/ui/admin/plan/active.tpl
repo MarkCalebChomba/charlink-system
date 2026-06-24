@@ -7,7 +7,7 @@
                 {if in_array($_admin['user_type'],['SuperAdmin','Admin'])}
                     <div class="btn-group pull-right">
                         <a class="btn btn-primary btn-xs" title="save" href="{Text::url('')}plan/sync"
-                            onclick="return ask(this, '{Lang::T("This will sync dan send Customer active package to Mikrotik")}?')"><span
+                            onclick="return ask(this, '{Lang::T("This will sync and send Customer active package to Mikrotik")}?')"><span
                                 class="glyphicon glyphicon-refresh" aria-hidden="true"></span> {Lang::T("Sync")}</a>
                     </div>
                     {* <div class="btn-group pull-right">

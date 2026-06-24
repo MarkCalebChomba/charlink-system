@@ -1,7 +1,7 @@
 <?php
 
 /**
- * PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
+ * Charlink Connect - Hotspot Billing (https://github.com/MarkCalebChomba/charlink-system)
  * This file for reminding user about expiration
  * Example to run every at 7:00 in the morning
  * 0 7 * * * /usr/bin/php /var/www/system/cron_reminder.php

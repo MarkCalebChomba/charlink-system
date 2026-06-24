@@ -1,15 +1,14 @@
 {
-    "name": "hotspotbilling/phpnuxbill",
+    "name": "charlink/charlink-connect",
     "type": "template",
-    "description": "PHPNuxBill a Hotspot Billing Software.",
-    "keywords": ["template","PHPMixBill","PHPnuxBill","Mikrotik","Hotspot","Billing"],
-    "homepage": "https://github.com/hotspotbilling/phpnuxbill",
+    "description": "Charlink Connect - Hotspot Billing System with M-Pesa integration.",
+    "keywords": ["Mikrotik", "Hotspot", "Billing", "MPesa", "Kenya", "Charlink"],
+    "homepage": "https://github.com/MarkCalebChomba/charlink-system",
     "license": "MIT",
     "authors": [
         {
-            "name": "ibnux",
-            "email": "me@ibnux.net",
-            "homepage": "https://ibnux.net",
+            "name": "Charlink Connect",
+            "homepage": "https://github.com/MarkCalebChomba/charlink-system",
             "role": "Developer"
         }
     ]

@@ -1,12 +1,12 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  Charlink Connect - Hotspot Billing (https://github.com/MarkCalebChomba/charlink-system)
+ *  by Charlink Connect
  **/
 
 _admin();
-$ui->assign('_title', 'PHPNuxBill Logs');
+$ui->assign('_title', 'Charlink Connect Logs');
 $ui->assign('_system_menu', 'logs');
 
 $action = $routes['1'];

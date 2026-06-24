@@ -11,7 +11,7 @@
     </footer>
 {else}
     <footer class="main-footer">
-        PHPNuxBill by <a href="https://github.com/hotspotbilling/phpnuxbill" rel="nofollow noreferrer noopener"
+        Charlink Connect <a href="https://github.com/MarkCalebChomba/charlink-system" rel="nofollow noreferrer noopener"
             target="_blank">iBNuX</a>, Theme by <a href="https://adminlte.io/" rel="nofollow noreferrer noopener"
             target="_blank">AdminLTE</a>
         <div class="pull-right">

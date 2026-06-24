@@ -254,9 +254,14 @@ function encodeUrlParams(string $url): string {
     return $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query'];
 }
 
-function mpesa_create_transaction($trx, $user, $phone)
+function mpesa_create_transaction($trx, $user)
 {
     global $config;
+
+    $phone = _post('phone');
+    if (empty($phone)) {
+        $phone = $user['phonenumber'];
+    }
 
     try {
         $mpesa = new MpesaService(
@@ -268,15 +273,15 @@ function mpesa_create_transaction($trx, $user, $phone)
         );
 
         $phone = preg_replace('/[^0-9]/', '', $phone);
-
         if (strlen($phone) === 10) {
             $phone = '254' . substr($phone, -9);
+        } elseif (strlen($phone) === 12 && substr($phone, 0, 3) === '254') {
+            // already in format 254XXXXXXXXX
+        } else {
+            $phone = '254' . ltrim($phone, '0');
         }
 
-
-
-
-        $callback_url = U . 'callback/m-process-transaction/' . $trx['id'];
+        $callback_url = U . 'callback/mpesa';
 
 
         $result = $mpesa->sendStkPush(
@@ -284,7 +289,7 @@ function mpesa_create_transaction($trx, $user, $phone)
             $phone,
             $trx['id'],
             $callback_url,
-            "Reduzer"
+            $config['CompanyName']
         );
 
 

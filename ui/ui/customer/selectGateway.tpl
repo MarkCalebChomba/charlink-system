@@ -164,12 +164,57 @@
                             </select>
                         </div>
                     </div>
+                    {* M-Pesa phone field - only shown when mpesa gateway is selected *}
+                    <div id="mpesa-phone-field" style="display:none; margin-bottom:15px;">
+                        <div class="form-group row">
+                            <label class="col-md-4 control-label">{Lang::T('Your MPesa Number')}</label>
+                            <div class="col-md-8">
+                                <input type="text"
+                                       class="form-control input-lg"
+                                       name="phone"
+                                       id="mpesa-phone"
+                                       maxlength="12"
+                                       placeholder="07XX XXX XXX"
+                                       style="font-size:16px;">
+                                <small class="text-muted">Format: 07XXXXXXXX or 01XXXXXXXX</small>
+                            </div>
+                        </div>
+                    </div>
                     <center>
                         <button type="submit" name="pay" class="btn btn-primary"
-                        onclick="return ask(this, '{Lang::T("Are You Sure?")}')">{Lang::T('Pay Now')}</button>
+                        onclick="return validateAndAsk(this, '{Lang::T("Are You Sure?")}')">{Lang::T('Pay Now')}</button>
                         <a href="{Text::url('home')}" class="btn btn-secondary">{Lang::T('Cancel')}</a>
                     </center>
                 </form>
+                <script>
+                (function(){
+                    var gw = document.getElementById('gateway');
+                    var phoneDiv = document.getElementById('mpesa-phone-field');
+                    var phoneInput = document.getElementById('mpesa-phone');
+                    function togglePhone(){
+                        if(gw && gw.value === 'mpesa'){
+                            phoneDiv.style.display = 'block';
+                            phoneInput.required = true;
+                        } else {
+                            phoneDiv.style.display = 'none';
+                            phoneInput.required = false;
+                        }
+                    }
+                    if(gw){ gw.addEventListener('change', togglePhone); togglePhone(); }
+                })();
+                function validateAndAsk(btn, msg){
+                    var gw = document.getElementById('gateway');
+                    var phone = document.getElementById('mpesa-phone');
+                    if(gw && gw.value === 'mpesa'){
+                        var val = phone ? phone.value.replace(/[^0-9]/g,'') : '';
+                        if(val.length < 9 || val.length > 12){
+                            alert('Please enter a valid M-Pesa phone number');
+                            return false;
+                        }
+                    }
+                    return ask(btn, msg);
+                }
+                </script>
             </div>
         </div>
     </div>
